@@ -16,7 +16,8 @@ class Product(models.Model):
         'Preço',
         max_digits=6,
         decimal_places=2,
-        null=False
+        null=False,
+        help_text='Favor, incluir até 6 dígitos, com 2 casas decimais'
     )
     image = models.URLField(
         'URL da imagem',
@@ -32,7 +33,8 @@ class Product(models.Model):
         'Pontuação do produto',
         max_digits=3,
         decimal_places=1,
-        null=True
+        null=True,
+        help_text='Favor, incluir até 3 dígitos, com 1 casa decimal'
     )
 
     # Human-readable para o nome de entidades
