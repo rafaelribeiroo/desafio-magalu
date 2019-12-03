@@ -2,9 +2,7 @@
 HOST=0.0.0.0:8000
 
 pyc:
-	find . -name '*.pyc' -exec rm --force {} +
-	find . -name '*.pyo' -exec rm --force {} +
-	name '*~' -exec rm --force  {}
+	find . -name "*.pyc" -exec rm -f {} \;
 	@echo "Arquivos .pyc excluídos"
 
 pycache:
