@@ -11,12 +11,6 @@ pycache:
 	find . -type d -name '__pycache__' -prune -exec rm -rf {} \;
 	@echo "Arquivos __pycache__ excluídos"
 
-build:
-    rm --force --recursive build/
-    rm --force --recursive dist/
-    rm --force --recursive *.egg-info
-	@echo "Arquivos de sistema excluídos"
-
 comments:
 	sed '/^[[:blank:]]*#/d;s/#.*//' **/*.py
 	@echo "Comentários removidos"
@@ -27,7 +21,6 @@ migration:
 
 clean-all:
 	pyc
-	build
 	pycache
 	comments
 	migrations
@@ -36,21 +29,18 @@ clean-all:
 isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
 
-lint:
-    flake8 --exclude=.tox
-
 run:
 	python manage.py runserver $(HOST)  # --settings=src.settings.dev
 
 # make te APP=<app_name>
 te:
 	python manage.py migrate  # --database=<name>
-	python manage.py --app $(APP)
+	# python manage.py --app $(APP)
 
 # make tions APP=<app_name>
 ti:
 	python manage.py makemigrations
-	python manage.py makemigrations --app $(APP)
+	# python manage.py makemigrations --app $(APP)
 
 usr:
 	python manage.py createsuperuser
