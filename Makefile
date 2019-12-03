@@ -28,12 +28,11 @@ isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
 
 run:
-	python manage.py runserver $(HOST)  # --settings=src.settings.dev
+	python manage.py runserver $(HOST)
 
 # make te APP=<app_name>
 te:
-	python manage.py migrate  # --database=<name>
-	# python manage.py --app $(APP)
+	python manage.py migrate
 
 # make ti APP=<app_name>
 ti:
