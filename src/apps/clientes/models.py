@@ -56,6 +56,7 @@ class Client(models.Model):
         max_length=255,
         unique=True
     )
+    favorite = models.ManyToManyField(Product)
 
     class Meta:
         ordering = ['name']
