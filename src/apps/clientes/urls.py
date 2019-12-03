@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework import routers
 from .views import CategoryViewSet
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register('clients', CategoryViewSet)
 
 '''
