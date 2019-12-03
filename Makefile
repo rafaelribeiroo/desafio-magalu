@@ -51,7 +51,7 @@ truncate:
 	python manage.py sqlflush
 
 dump:
-	python manage.py dumpdata --format=json --all --natural --indent=4 --database=default > db_dump.json
+	python manage.py dumpdata --format=json --all --natural --indent=4 --database=default > products.json
 
 populate:
-	python manage.py loaddata db_dump.json  # database=production
+	python manage.py loaddata products.json  # database=production
