@@ -33,7 +33,7 @@ run:
 # make ti APP=<app_name>
 ti:
 	python manage.py makemigrations
-	python manage.py makemigrations $(APP)
+	python manage.py makemigrations clientes
 
 te:
 	python manage.py migrate
