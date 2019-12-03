@@ -65,6 +65,6 @@ $ make run
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Esse projeto é licenciado sob a licença MIT - abra o arquivo [LICENSE](LICENSE) para detalhes.
 
 
