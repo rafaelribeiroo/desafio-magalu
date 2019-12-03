@@ -14,7 +14,7 @@ comments:
 	@echo "Comentários removidos"
 
 migration:
-	find . -type d -name 'migrations' -prune -exec rm -rf {} \;
+	rm -rf /apps/clientes/migrations
 	@echo "Migrações de banco excluídas"
 
 clean-all:
@@ -30,14 +30,13 @@ isort:
 run:
 	python manage.py runserver $(HOST)
 
-# make te APP=<app_name>
-te:
-	python manage.py migrate
-
 # make ti APP=<app_name>
 ti:
 	python manage.py makemigrations
 	python manage.py makemigrations $(APP)
+
+te:
+	python manage.py migrate
 
 usr:
 	python manage.py createsuperuser
