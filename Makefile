@@ -35,10 +35,10 @@ te:
 	python manage.py migrate  # --database=<name>
 	# python manage.py --app $(APP)
 
-# make tions APP=<app_name>
+# make ti APP=<app_name>
 ti:
 	python manage.py makemigrations
-	# python manage.py makemigrations --app $(APP)
+	python manage.py makemigrations $(APP)
 
 usr:
 	python manage.py createsuperuser

@@ -18,10 +18,49 @@ class Product(models.Model):
         decimal_places=2,
         null=False
     )
-    image = models.URLField('URL da imagem', max_length=200, null=False)
-    brand = models.CharField('Marca', max_length=50, null=False)
+    image = models.URLField(
+        'URL da imagem',
+        max_length=200,
+        null=False
+    )
+    brand = models.CharField(
+        'Marca',
+        max_length=50,
+        null=False
+    )
     reviewScore = models.DecimalField(
         'Pontuação do produto',
         max_digits=3,
-        decimal_places=1
+        decimal_places=1,
+        null=True
     )
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = 'Produto'
+        verbose_name_plural = 'Produtos'
+
+    def __str__(self):
+        return self.title
+
+
+class Client(models.Model):
+    name = models.CharField(
+        'Nome',
+        max_length=150,
+        null=False,
+        blank=True
+    )
+    email = models.EmailField(
+        'Endereço de e-mail',
+        max_length=255,
+        unique=True
+    )
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
+
+    def __str__(self):
+        return self.name
