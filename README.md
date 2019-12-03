@@ -20,7 +20,7 @@ PostgreSQL 9.x+
 Vamos acessar o console do Postgres para criar nosso banco de dados.
 
 ```
-sudo -u postgres psql
+$ sudo -u postgres psql
 postgres=# CREATE DATABASE desafiomagalu;
 postgres=# GRANT ALL PRIVILEGES ON DATABASE desafiomagalu TO <seu_usuario>;
 ```
