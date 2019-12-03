@@ -35,11 +35,13 @@ class Product(models.Model):
         null=True
     )
 
+    # Human-readable para o nome de entidades
     class Meta:
         ordering = ['title']
         verbose_name = 'Produto'
         verbose_name_plural = 'Produtos'
 
+    # Representação dos objetos em strings
     def __str__(self):
         return self.title
 
@@ -61,10 +63,12 @@ class Client(models.Model):
         verbose_name='Produtos favoritos'
     )
 
+    # Human-readable para o nome de entidades
     class Meta:
         ordering = ['name']
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
 
+    # Representação dos objetos em strings
     def __str__(self):
         return self.name
