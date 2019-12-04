@@ -14,7 +14,7 @@ Qual a diferença entre put e patch?
 No patch você altera vários valores, no put é recomendado para um apenas.
 '''
 
-app_name = 'clientes'
+app_name = 'api'
 urlpatterns = [
     path('', include(router.urls))
 ]

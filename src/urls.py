@@ -17,10 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 # URLs externas
-from src.apps.clientes import urls as clientes_urls
+from api import urls as api_urls
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include((clientes_urls), namespace='core'))
+    path('api/', include((api_urls), namespace='core'))
 ]

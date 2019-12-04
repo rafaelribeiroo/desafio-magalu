@@ -14,7 +14,7 @@ comments:
 	@echo "Comentários removidos"
 
 migration:
-	rm -rf /apps/clientes/migrations
+	rm -rf api/migrations
 	@echo "Migrações de banco excluídas"
 
 clean-all:
@@ -33,7 +33,7 @@ run:
 # make ti APP=<app_name>
 ti:
 	python manage.py makemigrations
-	python manage.py makemigrations clientes
+	python manage.py makemigrations api
 
 te:
 	python manage.py migrate
