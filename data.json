@@ -1,0 +1,342 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-12-04T22:40:16.068Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Ana Marcia da Silva",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-12-04T22:40:37.479Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Ana Marcia da Silva",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-12-04T22:40:50.401Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Domingos de Cristo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-12-04T22:40:58.125Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Josefa dos Santos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-12-04T22:41:05.514Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Rafael Pereira Ribeiro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-12-04T22:41:11.326Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Richelly Francisca Ameixa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-12-04T22:41:16.160Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Wagner Fonseca Marangoni",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Produtos favoritos\"]}}]"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mbn088beuu9hec65vuyreg1yyp58acwd",
+    "fields": {
+        "session_data": "YzI5YTczOGZkZmM5YWYyZTkxNTlhMDNjYzUzMTc4NGRlZmIzZWI4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NWMwNTY1NGNiNzAwNmVhNjg5ZWZlZThjMDIzZjNiNTUxNTg1MTA0In0=",
+        "expire_date": "2019-12-18T22:29:07.654Z"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 1,
+    "fields": {
+        "title": "Headphone Bluetooth JBL T500BT",
+        "price": "213.90",
+        "image": "https://a-static.mlcdn.com.br/618x463/headphone-bluetooth-jbl-t500bt-com-microfone-preto/magazineluiza/030910800/3d22d45f0b8445c6b0651ed61d84b3db.jpg",
+        "brand": "JBL",
+        "reviewScore": "4.7"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 2,
+    "fields": {
+        "title": "Impressora multifuncional HP Deskjet",
+        "price": "223.00",
+        "image": "https://a-static.mlcdn.com.br/618x463/impressora-multifuncional-hp-deskjet-ink-advantage-2676-jato-de-tinta-wi-fi-usb-2-0/techshop/imphpo00191/b4b2f2b0f4f188fdfc477bd520859eb0.jpg",
+        "brand": "HP",
+        "reviewScore": "4.2"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 3,
+    "fields": {
+        "title": "Smartphone Motorola Moto G7",
+        "price": "1049.00",
+        "image": "https://a-static.mlcdn.com.br/618x463/smartphone-motorola-moto-g7-64gb-4gb-tela-6-24-full-hd-camera-12-5mp-dual-traseira-polar/semprevoce/3769/2cb69ff7f4c08d489d3aa72d84590c77.jpg",
+        "brand": "Motorola",
+        "reviewScore": "4.2"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 4,
+    "fields": {
+        "title": "Controle para PS4 sem fio",
+        "price": "223.20",
+        "image": "https://a-static.mlcdn.com.br/618x463/controle-para-ps4-sem-fio-dualshock-4-sony-preto/magazineluiza/043179500/54a39fa78d7cf3fe3776e1cce7c44c19.jpg",
+        "brand": "Sony",
+        "reviewScore": "4.7"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 5,
+    "fields": {
+        "title": "Smartphone Samsung Galaxy A10",
+        "price": "759.90",
+        "image": "https://a-static.mlcdn.com.br/618x463/smartphone-samsung-galaxy-a10-32gb-preto-4g-2gb-ram-62-cam-13mp-cam-selfie-5mp/onofre-agora/789933/096d5ade04fc66d9b72844e11ec67254.jpg",
+        "brand": "Samsung",
+        "reviewScore": "4.0"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 6,
+    "fields": {
+        "title": "FIFA 20 para PS4",
+        "price": "224.91",
+        "image": "https://a-static.mlcdn.com.br/618x463/fifa-20-para-ps4-ea/magazineluiza/043183700/aa84bfe4390c813ddc8c63003d2ba48e.jpg",
+        "brand": "PS4",
+        "reviewScore": "5.0"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 7,
+    "fields": {
+        "title": "Smartphone LG K12 Plus 32GB",
+        "price": "695.00",
+        "image": "https://a-static.mlcdn.com.br/618x463/smartphone-lg-k12-plus-32gb-preto-4g-3gb-ram-57-cam-16mp-selfie-8mp-inteligencia-artificial/webfones2/16288/96b024de9ef18239a8cb097e35c310d5.jpg",
+        "brand": "LG",
+        "reviewScore": "4.7"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 8,
+    "fields": {
+        "title": "Tablet Samsung Galaxy Tab",
+        "price": "1120.05",
+        "image": "https://a-static.mlcdn.com.br/618x463/tablet-samsung-galaxy-tab-a-32gb-101-wi-fi-android-9-1-octa-core-cam-8mp-selfie-5mp/magazineluiza/135284900/09f12dffcc1e3b635179599e8b585a80.jpg",
+        "brand": "Samsung",
+        "reviewScore": "4.7"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 9,
+    "fields": {
+        "title": "iPhone 8 64GB",
+        "price": "2789.10",
+        "image": "https://a-static.mlcdn.com.br/618x463/iphone-8-apple-64gb-prata-4g-tela-47-retina-cam-12mp-selfie-7mp-ios-11/magazineluiza/155542700/677e2fd3faf627607d0da9242e4c479d.jpg",
+        "brand": "Apple",
+        "reviewScore": "4.7"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 10,
+    "fields": {
+        "title": "Telefone com fio Intelbras Pleno",
+        "price": "33.90",
+        "image": "https://a-static.mlcdn.com.br/618x463/telefone-com-fio-intelbras-pleno-preto/magazineluiza/203214000/c981409aaa73e7cfdebaaa115f4f4f4f.jpg",
+        "brand": "Intelbras",
+        "reviewScore": "4.4"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 11,
+    "fields": {
+        "title": "Telefone Sem Fio Intelbras TS 3113 + 2 Ramais",
+        "price": "179.91",
+        "image": "https://a-static.mlcdn.com.br/618x463/telefone-sem-fio-intelbras-ts-3113-2-ramais-identificador-de-chamada-conferencia-preto/magazineluiza/216414000/819b86fcc4ced6dee2f16e7381dded7d.jpg",
+        "brand": "Intelbras",
+        "reviewScore": "4.6"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 12,
+    "fields": {
+        "title": "Tablet Philco PTB7QRG",
+        "price": "272.56",
+        "image": "https://a-static.mlcdn.com.br/618x463/tablet-philco-ptb7qrg-8gb-7-wi-fi-android-7-1-2-nougat-quad-core/magazineluiza/221386800/af1068cf099687109dbda4ef36039113.jpg",
+        "brand": "Philco",
+        "reviewScore": "1.2"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 13,
+    "fields": {
+        "title": "Monitor para PC",
+        "price": "539.91",
+        "image": "https://a-static.mlcdn.com.br/618x463/monitor-para-pc-full-hd-lg-led-ips-238-24mk430hn-ab-awz/magazineluiza/221590100/7e1530fd0a024e6b3979260e04fe0c23.jpg",
+        "brand": "LG",
+        "reviewScore": "4.1"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 14,
+    "fields": {
+        "title": "Notebook Acer Aspire 3",
+        "price": "1529.10",
+        "image": "https://a-static.mlcdn.com.br/618x463/notebook-acer-aspire-3-a315-53-343y-intel-core-i3-4gb-1tb-156-linux/magazineluiza/221975900/fb7fd3f9a7fb54c8068b5cfd0a9d6512.jpg",
+        "brand": "Acer",
+        "reviewScore": "5.0"
+    }
+},
+{
+    "model": "api.product",
+    "pk": 15,
+    "fields": {
+        "title": "Smartwatch Samsung Watch",
+        "price": "899.10",
+        "image": "https://a-static.mlcdn.com.br/618x463/smartwatch-samsung-watch-active-galaxy-rose-4gb/magazineluiza/222324600/a3a0d837984eeedc39fc27ea1ce54636.jpg",
+        "brand": "Samsung",
+        "reviewScore": "5.0"
+    }
+},
+{
+    "model": "api.client",
+    "pk": 1,
+    "fields": {
+        "name": "Rafael Pereira Ribeiro",
+        "email": "rafa@rafa.com",
+        "favorite": [
+            4,
+            6,
+            1,
+            9
+        ]
+    }
+},
+{
+    "model": "api.client",
+    "pk": 2,
+    "fields": {
+        "name": "Ana Marcia da Silva",
+        "email": "ana@gmail.com",
+        "favorite": [
+            2,
+            10
+        ]
+    }
+},
+{
+    "model": "api.client",
+    "pk": 3,
+    "fields": {
+        "name": "Josefa dos Santos",
+        "email": "josefa@hotmail.com",
+        "favorite": [
+            3,
+            11
+        ]
+    }
+},
+{
+    "model": "api.client",
+    "pk": 4,
+    "fields": {
+        "name": "Domingos de Cristo",
+        "email": "domingos@outlook.com",
+        "favorite": [
+            14,
+            12
+        ]
+    }
+},
+{
+    "model": "api.client",
+    "pk": 5,
+    "fields": {
+        "name": "Richelly Francisca Ameixa",
+        "email": "richelly@yahoo.com.br",
+        "favorite": [
+            4,
+            5,
+            11
+        ]
+    }
+},
+{
+    "model": "api.client",
+    "pk": 6,
+    "fields": {
+        "name": "Wagner Fonseca Marangoni",
+        "email": "wagner@gmail.com",
+        "favorite": [
+            6,
+            7,
+            8
+        ]
+    }
+}
+]
