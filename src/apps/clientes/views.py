@@ -8,7 +8,8 @@ from .models import Client, Product
 
 class ClientViewSet(viewsets.ModelViewSet):
     serializer_class = ClientSerializer
-    queryset = Client.objects.all()
+    # Lista dos mais recentes aos mais antigos
+    queryset = Client.objects.all().order_by('-id')
 
 
 class ProductViewSet(viewsets.ModelViewSet):
