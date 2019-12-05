@@ -26,8 +26,10 @@ SECRET_KEY = decouple('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = decouple('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
-
+if DEBUG:
+    ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
+else:
+    ALLOWED_HOSTS = ['maga-api.herokuapp.com']
 
 # Application definition
 
