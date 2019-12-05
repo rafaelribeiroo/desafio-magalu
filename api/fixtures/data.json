@@ -92,10 +92,18 @@
 },
 {
     "model": "sessions.session",
-    "pk": "mbn088beuu9hec65vuyreg1yyp58acwd",
+    "pk": "xj6okiutjo0ibrk7qim53n4hdskgyea9",
     "fields": {
         "session_data": "YzI5YTczOGZkZmM5YWYyZTkxNTlhMDNjYzUzMTc4NGRlZmIzZWI4Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1NWMwNTY1NGNiNzAwNmVhNjg5ZWZlZThjMDIzZjNiNTUxNTg1MTA0In0=",
-        "expire_date": "2019-12-18T22:29:07.654Z"
+        "expire_date": "2019-12-19T02:50:47.391Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "2516147b5bca1617ced4e11d8741b12b19f999da",
+    "fields": {
+        "user": 1,
+        "created": "2019-12-05T02:35:37.530Z"
     }
 },
 {
