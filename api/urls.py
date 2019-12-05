@@ -1,4 +1,5 @@
 from .views import ClientViewSet, ProductViewSet
+from rest_framework.authtoken import views
 from django.urls import path, include
 from rest_framework import routers
 
@@ -16,5 +17,5 @@ No patch você altera vários valores, no put é recomendado para um apenas.
 
 app_name = 'api'
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls + [path('auth', views.obtain_auth_token)]))
 ]
