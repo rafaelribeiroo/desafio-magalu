@@ -128,5 +128,6 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 1
+    # Quantidade de registros a ser exibido por página
+    'PAGE_SIZE': 3
 }
