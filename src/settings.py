@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+from dj_database_url import config as db_cfg
 from decouple import config as decouple
 import os
 
@@ -28,8 +29,21 @@ DEBUG = decouple('DEBUG', default=True, cast=bool)
 
 if DEBUG:
     ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': decouple('NAME_DB'),
+            'USER': decouple('USER_DB'),
+            'PASSWORD': decouple('PASSWD_DB'),
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
 else:
     ALLOWED_HOSTS = ['maga-api.herokuapp.com']
+    # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    DATABASES['default'] = db_cfg.config()
 
 # Application definition
 
@@ -74,22 +88,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'src.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': decouple('NAME_DB'),
-        'USER': decouple('USER_DB'),
-        'PASSWORD': decouple('PASSWD_DB'),
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
