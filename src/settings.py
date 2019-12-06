@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = decouple('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = decouple('DEBUG', default=True, cast=bool)
+DEBUG = decouple('DEBUG', default=False, cast=bool)
 
 if DEBUG:
     ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
