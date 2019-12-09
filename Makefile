@@ -17,13 +17,6 @@ migration:
 	rm -rf api/migrations
 	@echo "Migrações de banco excluídas"
 
-clean-all:
-	pyc
-	pycache
-	comments
-	migrations
-	@echo "Remoção completa"
-
 isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
 
@@ -41,16 +34,16 @@ te:
 usr:
 	python manage.py createsuperuser
 
-shell:
+sh:
 	python manage.py shell
 
-collect:
+clt:
 	python manage.py collectstatic
 
-truncate:
+tr:
 	python manage.py sqlflush
 
-dump:
+dp:
 	python manage.py dumpdata -a -e=auth -e=contenttypes --format=json --indent=4 > data.json
 
 populate:

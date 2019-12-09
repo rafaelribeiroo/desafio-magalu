@@ -1,4 +1,6 @@
-# API PRODUTOS FAVORITOS
+# API FAVORITAR
+
+[LIVE ON HEROKU](https://maga-api.herokuapp.com/api)
 
 A API acima visa colaborar com a equipe de marketing, para que identifiquem os produtos favoritos de cada cliente para que realizem seus trabalhos.
 
@@ -32,10 +34,10 @@ A seguir, passo-a-passo de como baixar, instalar e executá-lo.
 ```
 $ git clone git@github.com:rafaelribeiroo/desafio-magalu.git ~/Downloads
 $ cd ~/Downloads/desafio-magalu
-$ python -m venv .venv
+$ python -m venv .venv  # Specific of python 3.3+
 $ source .venv/bin/activate
 $ pip install -r requirements.txt
-$ make ti
+$ make ti  # library build-essential
 $ make te
 ```
 
